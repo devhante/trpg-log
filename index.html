@@ -4,11 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>족이의 티알 로그 백업사이트</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    #title {
+      padding: 20px;
+      background-color: #E8F4EA;
+      color: #789561;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    #content {
+      padding: 20px;
+    }
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 100px;
+      border: 1px solid #444444;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>족이의 티알 로그 백업사이트</h1>
-  <ul>
-    <li><a href="./1.html">가족의 초상</a></li>
-  </ul>
+  <div id="title">족이의 티알 로그 백업사이트</div>
+  <div id="content">
+    <div class="card" onclick="handleClickCard('1.html')">가족의 초상</div>
+  </div>
+  <script>
+    const handleClickCard = (url) => {
+      location.href = url;
+    }
+  </script>
 </body>
 </html>
